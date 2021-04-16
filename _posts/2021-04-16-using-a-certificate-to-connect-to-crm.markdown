@@ -74,7 +74,7 @@ Fill in the Application ID of the app you registered in the Azure Active Directo
 
 ### Import the certificate to the local machine
 
-Now, in your local machine (or the one you'll be using to connect to the environment) and open the PFX/PEM certificate file to import it. skip the page where the wizard asks for a password for the file.
+Now, in your local machine (or the one you'll be using to connect to the environment), open the PFX/PEM certificate file to import it. skip the page where the wizard asks for a password for the file.
 
 ### Connect to the environment
 
