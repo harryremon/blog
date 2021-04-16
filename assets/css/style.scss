@@ -2,3 +2,7 @@
 ---
 
 @import 'jekyll-theme-cayman-blog';
+
+.main-content img {
+    max-width: 70% !important;
+}
