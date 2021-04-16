@@ -23,5 +23,5 @@ Here's what we need to do in details:
 
 Login to your [Azure Portal](https://portal.azure.com) and create a new azure key vault resource:
 
-![Create New Azure Key Vault](/assets/create-azure-keyvault.PNG)
+![Create New Azure Key Vault](/blog/assets/create-azure-keyvault.PNG)
 
