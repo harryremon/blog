@@ -25,7 +25,7 @@ for example add the following code to your page:
 ```
 {% endraw %}
 
-and include the "**conditionCache**" variable in your fetchxml. since it's very unlikely that any records would be created in the same second your page loads, this condition should be irrelevant to your request and since every time the page is loaded the datetime value would be different, the fetchxml will always have a unique value in it. which would cause it to bypass the server side 15 minuet cache rule and retrieve the up to date data.
+and include the "**conditionCache**" variable in your fetchxml. since it's very unlikely that any records would be created in the same second your page loads, this condition should be irrelevant to your request and since every time the page is loaded the datetime value would be different, the fetchxml will always have a unique value in it. which would cause it to bypass the server side 15 minute cache rule and retrieve the up to date data.
 
 and that's it, Job done.\
 Happy Coding :computer:
