@@ -22,7 +22,7 @@ title: Remon Kamel's Blog
 email: rkamel@hotmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   a Blog about my adventures in the .NET, Azure, and Power Platform Worlds
-baseurl: "/blog" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://remonkamel.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  harryremon
 
@@ -30,6 +30,7 @@ github_username:  harryremon
 theme: 
 plugins:
   - jekyll-feed
+  - jemoji
 
 # Exclude from processing.
 # The following items will not be processed, by default.

@@ -24,7 +24,7 @@ Here's what we need to do in details:
 
 Login to your [Azure Portal](https://portal.azure.com) and create a new azure key vault resource:
 
-![Create New Azure Key Vault](/blog/assets/create-azure-keyvault.PNG)
+![Create New Azure Key Vault](/assets/create-azure-keyvault.PNG)
 
 Choose your resource group or create a new one, choose a name for the key vault and a region to deploy it to.
 
@@ -34,7 +34,7 @@ Now, Click on Review + create. Make sure that everything is in order, then go ah
 
 Now, open the azure key vault resource and go to "**Certificates**", and click on "**Generate/Import**"
 
-![Create a Certificate](/blog/assets/create-certificate.PNG)
+![Create a Certificate](/assets/create-certificate.PNG)
 
 Choose a name for your certificate, and enter this as the subject:
 ```json
@@ -56,7 +56,7 @@ Now open the app you just created, and go to "**Certificates & secrets**"
 
 Click on "**Upload certification**" and choose the **.cer** file you downloaded in the previous step.
 
-![Certificate](/blog/assets/certificate.PNG)
+![Certificate](/assets/certificate.PNG)
 
 Now copy the certificate Thumbprint as we will need to use it later in the connection string.
 
@@ -66,7 +66,7 @@ Go to your dataverse or CRM Online environment, and go to Settings > Security > 
 
 Change the user view to "Application Users" and create a new user, make sure that the form you're using is for "**Application User**", it should look like this
 
-![New Application User](/blog/assets/newuser.PNG)
+![New Application User](/assets/newuser.PNG)
 
 Fill in the Application ID of the app you registered in the Azure Active Directory before and Save.
 
