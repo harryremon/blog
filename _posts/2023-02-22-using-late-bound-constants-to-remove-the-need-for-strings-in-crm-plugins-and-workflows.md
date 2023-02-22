@@ -5,6 +5,7 @@ date:   2023-02-22 11:00:00 +0000
 categories: crm dynamics update
 ---
 
+
 Have you seen something like this before:
 ```csharp
     var name = target.Attributes["abc_fullname"];
@@ -13,10 +14,17 @@ Have you seen something like this before:
     var property = target.Attributes["abc_proprety"];
 ```
 Did you spot the issue ? 
-this code would throw an error because there's a misspelling in the "property" attribute logical name. Now imagine dealing with lots of attributes with complex names and never knowing if you have an issue until you run the code and the exception just jumps in your face.
+
+this code would throw an error because there's a misspelling in the "property" attribute logical name.
+
+Now imagine dealing with lots of attributes with complex names and never knowing if you have an issue until you run the code and the exception just jumps in your face.
+
 There is a better way to handle this so we can have a cleaner code which is easier to maintain and debug.
+
 One way would be to change these late-bound attributes and use early bound contracts, which is good but it might introduce some complexity that you want to avoid.
+
 The easier and less complex way is to use auto generated late-bound constants.
+
 Here's how to do that:
 ## Generating Late Bound Constants using XRMToolbox
 Open your XRMToolbox and look for a tool called **Latebound Constants Generator**
