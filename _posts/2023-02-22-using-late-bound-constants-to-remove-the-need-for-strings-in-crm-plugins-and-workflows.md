@@ -6,12 +6,12 @@ categories: crm dynamics update
 ---
 
 Have you seen something like this before:
-
+```csharp
     var name = target.Attributes["abc_fullname"];
     var phone = target.Attributes["abc_phone"];
     var email = target.Attributes["emailaddress1"];
     var property = target.Attributes["abc_proprety"];
-    
+```
 Did you spot the issue ? 
 this code would throw an error because there's a misspelling in the "property" attribute logical name. Now imagine dealing with lots of attributes with complex names and never knowing if you have an issue until you run the code and the exception just jumps in your face.
 There is a better way to handle this so we can have a cleaner code which is easier to maintain and debug.
@@ -31,12 +31,12 @@ Now, Check the ones that you need to generate constants for, and click on Genera
 Now you have the constants CS files saved.
 
 Include them in your project and use them to replace the above code with this
-
+```csharp
     var name = target.Attributes[Customer.FullName];
     var phone = target.Attributes[Customer.PhoneNumber];
     var email = target.Attributes[Customer.EmailPrimary];
     var property = target.Attributes[Customer.Property];
-
+```
 Looks much better, and since this code is auto generated, you can avoid misspellings and easily maintain and debug your code.
 
 I believe using this approach would make it much easier to spot issues and to have a more clean and readable code which is better for your productivity and for those who will need to work on this code after you.
