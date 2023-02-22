@@ -41,7 +41,7 @@ Looks much better, and since this code is auto generated, you can avoid misspell
 
 I believe using this approach would make it much easier to spot issues and to have a more clean and readable code which is better for your productivity and for those who will need to work on this code after you.
 
-Happy Coding :)
+Happy Coding :computer:
 
 
 
