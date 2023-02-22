@@ -5,8 +5,6 @@ date:   2023-02-22 11:00:00 +0000
 categories: crm dynamics update
 ---
 
-# Using Late-bound constants to remove the need for strings in CRM Plugins and Workflows
-
 Have you seen something like this before:
 
     var name = target.Attributes["abc_fullname"];
