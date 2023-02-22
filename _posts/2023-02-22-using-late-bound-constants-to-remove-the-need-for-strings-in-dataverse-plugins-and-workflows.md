@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Using Late-bound constants to remove the need for strings in CRM Plugins and Workflows"
+title:  "Using Late-bound constants to remove the need for strings in Dataverse Plugins and Workflows"
 date:   2023-02-22 11:00:00 +0000
-categories: crm dynamics update
+categories: crm dynamics dataverse update
 ---
 
 
@@ -36,7 +36,9 @@ Now, Check the ones that you need to generate constants for, and click on Genera
 
 ![Late Bound Image 2](/assets/late-bound-image-2.PNG)
 
-Now you have the constants CS files saved.
+Now you have the constants CS files saved, Which will look like this:
+
+![Late Bound Image 3](/assets/late-bound-image-3.PNG)
 
 Include them in your project and use them to replace the above code with this
 ```csharp
@@ -46,6 +48,16 @@ Include them in your project and use them to replace the above code with this
     var property = target.Attributes[Customer.Property];
 ```
 Looks much better, and since this code is auto generated, you can avoid misspellings and easily maintain and debug your code.
+
+Here is a quick comparison between using Late Bound strings and auto generated constants:
+
+|Late Bound Strings|Auto Generated Constants|
+|--|--|
+| Prone to misspelling mistakes | Misspelling mistake proof |
+| No Compile Time Validations | You get Compile Time Validations |
+| Changes need to be fixed manually | Easy to regenerate when changes or additions occur  |
+| Hard to read | Easier to read as it uses display names for properties |
+| Hard to maintain | Easier to maintain  |
 
 I believe using this approach would make it much easier to spot issues and to have a more clean and readable code which is better for your productivity and for those who will need to work on this code after you.
 
